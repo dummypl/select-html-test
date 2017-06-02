@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link type="text/css" rel="stylesheet" media="screen" href="global/plstore_android.css" />
+    <script type="text/javascript" src="global/jquery-1.11.1.min.js"></script> 
+    <title>WE Tor</title>
+    <style type="text/css">
+        #content{ bottom: 0px; }
+        #input { margin-top: 200px; }
+        #eingabe1 { width: 305px; }
+        #eingabe3 { width: 305px; }
+        td label {width: 250px;}
+    </style>
+    
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    tastensperre = 0;
+    function Absenden(ftaste)
+    {
+            
+        if (tastensperre == 1)
+            return false;
+
+        window.document.formular.fktTaste.value = ftaste;
+        if (window.document.formular.fktTaste.value == "")
+            return false;
+        if (window.document.formular.fktTaste.value == "FCR")
+        {
+            //if (!CheckInput())
+            //    return false;
+        }
+        else if (window.document.formular.fktTaste.value == "F02")
+            window.document.formular.action = "100.html";
+        else
+            return false;
+        tastensperre = 1;
+        window.document.formular.submit();
+   }
+   //-->
+  </script> 
+  </head>
+<body>
+    
+    <div id="head">
+	    <img id="pl_logo" src="global/pl_logo.png" />
+	    <h1 class="titel"><span class="hide_portrait">AAAAAAA</span><span class="hide_landscape">AA</span> - Test</h1>
+	    <div id="infoblock">
+		    <p>XYZ: 100</p>
+		    <p>ABC: 3172</p>
+		    <p>Screen: 0103</p>
+	    </div>
+    </div>
+    <div id="content">
+        <div id="input">
+            <div class="">
+                <form name="formular" action="103.html" onSubmit="return Absenden('FCR');" method="POST">
+	                <table align="center">
+	                    <tr>
+	                        <td class="paramgross"><label for="eingabe3" class="paramgross">Printers</label>:</td>
+	                        <td><select id="eingabe3" name="eingabe3" class="wertgross">
+                	            <option value="1">1 - MARKPOINT - 1</option>
+                	            <option value="2">2 - MARKPOINT - 2</option>
+                	            <option value="3">3 - MARKPOINT - 3</option>
+                	            <option value="4">4 - MARKPOINT - 4</option>
+                	        </select>
+                	        </td>
+	                    </tr>
+	                </table>
+		            <input type="hidden" name="fktTaste" value="FCR">
+	            </form>
+	        </div>
+        </div>
+    </div>
+    <div id="button_menue">
+        <div id="button_menue_list">
+            <ul>
+                <li data-ftaste="F04" class="first"><div>Button 1</div></li>
+                <li data-ftaste="F05"><div>Button 2</div></li>
+                <li data-ftaste="F06"><div>Button 3</div></li>
+                <li data-ftaste="F07"><div>Button 4</div></li>
+            </ul>
+        </div>
+        <div id="button_menue_fader">
+            <div id="button_menue_fader_text">&gt;&gt;</div>
+        </div>
+    </div>
+    <div id="footer">
+        <ul id="footer_buttons">
+            <li class="button first_button" data-ftaste="F02">Footerbutton 1</li>
+            <li class="button" data-ftaste="F03">Footerbutton 2</li>
+            <li class="button last_button" data-ftaste="FCR">Footerbutton 3</li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="global/android.js"></script>  
+</body>
+</html>
