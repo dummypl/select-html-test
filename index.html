@@ -34,7 +34,7 @@
             //    return false;
         }
         else if (window.document.formular.fktTaste.value == "F02")
-            window.document.formular.action = "/";
+            window.document.formular.action = "";
         else
             return false;
         tastensperre = 1;
@@ -56,7 +56,7 @@
     <div id="content">
         <div id="input">
             <div class="">
-                <form name="formular" action="/" onSubmit="return Absenden('FCR');" method="POST">
+                <form name="formular" action="" onSubmit="return Absenden('FCR');" method="POST">
 	                <table align="center">
 	                    <tr>
 	                        <td class="paramgross"><label for="eingabe3" class="paramgross">Printers</label>:</td>
