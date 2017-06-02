@@ -34,7 +34,7 @@
             //    return false;
         }
         else if (window.document.formular.fktTaste.value == "F02")
-            window.document.formular.action = "103.html";
+            window.document.formular.action = "/";
         else
             return false;
         tastensperre = 1;
@@ -46,7 +46,6 @@
 <body>
     
     <div id="head">
-	    <img id="pl_logo" src="global/pl_logo.png" />
 	    <h1 class="titel"><span class="hide_portrait">AAAAAAA</span><span class="hide_landscape">AA</span> - Test</h1>
 	    <div id="infoblock">
 		    <p>XYZ: 100</p>
@@ -57,7 +56,7 @@
     <div id="content">
         <div id="input">
             <div class="">
-                <form name="formular" action="103.html" onSubmit="return Absenden('FCR');" method="POST">
+                <form name="formular" action="/" onSubmit="return Absenden('FCR');" method="POST">
 	                <table align="center">
 	                    <tr>
 	                        <td class="paramgross"><label for="eingabe3" class="paramgross">Printers</label>:</td>
